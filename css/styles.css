@@ -1,0 +1,119 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa, serif;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+input, select {
+    width: 150px;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #d0d7dc;
+    border-radius: 5px;
+}
+input[type="number"] {width: 80px;}
+button {
+    height: 40px;
+    background-color: #fcc400;
+    border: 1px solid #fcc400;
+    border-radius: 5px;
+    font-family: Comfortaa, serif;
+    font-size: 16px;
+}
+button:hover {background-color: #eab703; border-color: #eab703;}
+
+/* Авторизация и регистрация */
+.form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.form input {width: 100%; margin: 5px 0 20px;}
+.form button {width: 100%;}
+
+/* Шапка */
+header {
+    width: 100%;
+    background-color: #fcc400;
+    display: flex;
+    justify-content: center;
+}
+.logo {width: 100px; height: 100px;}
+.menu {display: flex; align-items: center;}
+.menu li {
+    display: inline-block;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 20px;
+}
+.menu li a {color: black; text-decoration: none;}
+.menu li a:hover {color: white;}
+.menu li .active {color: white;}
+
+/* Поиск */
+main {
+    width: 75%;
+    height: auto;
+    min-height: 525px;
+    margin: 0 auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+fieldset {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #d0d7dc;
+    border-radius: 10px;
+}
+.account-section {height: 525px; padding: 70px 0 0;}
+.account {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 10px;
+
+}
+.account input {width: 100%; height: 40px; margin: 5px 0 20px;}
+.account button {width: 100%;}
+
+/* Список книг */
+.book {
+    width: 100%;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border: 1px solid #d0d7dc;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.book:last-child {margin-bottom: 0;}
+.book-info {flex-grow: 1;}
+.book-name {margin-bottom: 5px; font-weight: bold;}
+.book-page, .order-price {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fcc400;
+    border-radius: 20px;
+    color: white;
+}
+.book-genre, .order-num, .reader {display: inline-block; padding: 5px 0; align-self: flex-start;}
+.book-genre p {flex-basis: 200px;}
+
+/* Подвал */
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #212429;
+}
